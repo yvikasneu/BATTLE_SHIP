@@ -14,6 +14,11 @@ public class App {
 
         // CREATING A GAME 
         Game game1 = new Game(mainPlayer, computer);
+
+        // DEFINE GRIDS FOR BOTH PLAYERS
+        game1.setPlayer1Grid(new Grid(10, 10));        
+        game1.setPlayer2Grid(new Grid(10, 10));
+
         
         // ARRANGING SHIPS
         computer.randomlyArrangeShips(); 
