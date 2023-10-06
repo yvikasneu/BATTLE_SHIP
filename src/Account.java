@@ -12,8 +12,6 @@ public class Account {
         this.password = password; 
         this.country = country; 
         this.age = age; 
-
-        System.out.println("Output : " +  this.email + " " + this.age  + " " + this.country);
     }
 
 

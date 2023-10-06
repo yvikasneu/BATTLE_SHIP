@@ -5,7 +5,7 @@ public class Human extends Player{
     }
 
     // TAKE INPUT FROM THE USER AND ARRANGE SHIPS ACCORDINGLY
-    public void arrangeShips(){
+    public void arrangeShips() throws Exception{
         Ship ship1 = new Submarine();        
         Ship ship2 = new Submarine();        
         Ship ship3 = new Destroyer();

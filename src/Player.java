@@ -19,19 +19,19 @@ public class Player {
         return score; 
     }
 
-    public void addShip(Ship ship){
-        if(this.ships.size() < 7){
+    public void addShip(Ship ship) throws Exception{
+        if(this.ships.size() < 6){
             this.ships.add(this.ships.size(), ship);
         }else {
-            System.out.println("MAX LIMIT REACHED: Only 6 Ships are allowed");
+            throw new Exception("MAX LIMIT REACHED: Only 6 Ships are allowed");
         }
     }
 
-    public void addTorpedoes(Torpedo torpedo){
+    public void addTorpedoes(Torpedo torpedo) throws Exception{
         if(this.torpedoes.size() < 46){
             this.torpedoes.add(this.torpedoes.size(), torpedo);
         }else {
-            System.out.println("MAX LIMIT REACHED: Only 45 Ships are allowed");
+            throw new Exception("MAX LIMIT REACHED: Only 45 Ships are allowed");
         }
     }
 

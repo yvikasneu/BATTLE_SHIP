@@ -5,7 +5,7 @@ public class Computer extends Player {
     }
 
     // RANDOMLY ARRANGES SHIPS
-    public void randomlyArrangeShips(){
+    public void randomlyArrangeShips() throws Exception{
         for (int i = 0; i < 6; i++) {
             this.addShip(this.getRandomShip());      
         }
@@ -19,7 +19,7 @@ public class Computer extends Player {
         Ship ship4 = new Cruiser();
         Ship ship5 = new Carrier();
         Ship[] ships = {ship1, ship2, ship3, ship4, ship5};
-        return ships[(int)Math.random() * 5];
+        return ships[(int)(Math.random() * 5)];
     }
     
 }

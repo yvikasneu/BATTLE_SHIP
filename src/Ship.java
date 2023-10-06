@@ -1,6 +1,7 @@
 public class Ship {
     private int size; 
     private int[] position; 
+    private String type; 
 
 
     public void setPosition(int[] position){
@@ -13,6 +14,14 @@ public class Ship {
 
     public int getSize() {
         return size;
+    }
+
+    public void setType(String type) {
+      this.type = type;
+    }
+
+    public String getType() {
+        return type;
     }
 
     public int[] getPosition() {

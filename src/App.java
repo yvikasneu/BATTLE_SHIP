@@ -32,15 +32,18 @@ public class App {
         mainPlayer.addTorpedoes(new Torpedo(1, 1));        
         computer.addTorpedoes(new Torpedo(5, 1));
 
-        // Printing the game result
-        Result result = game1.getResult();
-        if(result.getWinner() == null){
-            System.out.println("Game draw");
+        System.out.println("");
+        System.out.println("Game: " +  mainPlayer.getName()  + " vs " + computer.getName());
+        System.out.println("");
+        System.out.println("Player 1 " + mainPlayer.getName()  + "'s ships :");
+        for (Ship ship : mainPlayer.getShips()) {
+            System.out.println("Type -> " +  ship.getType() + ", Size -> " + ship.getSize());
         }
-        else{
-            System.out.println(result.getWinner().getName() + " " + "Won");
+        System.out.println("");
+        System.out.println("Player 2 " + computer.getName()  + "'s ships :");
+        for (Ship ship : computer.getShips()) {
+            System.out.println("Type -> " +  ship.getType() + ", Size -> " + ship.getSize());
         }
-
         
     }
 }
