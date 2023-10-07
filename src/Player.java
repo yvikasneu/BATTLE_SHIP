@@ -27,6 +27,10 @@ public class Player {
         }
     }
 
+    public void removeShip(){
+        this.ships.remove(this.ships.size());
+    }
+
     public void addTorpedoes(Torpedo torpedo) throws Exception{
         if(this.torpedoes.size() < 46){
             this.torpedoes.add(this.torpedoes.size(), torpedo);
